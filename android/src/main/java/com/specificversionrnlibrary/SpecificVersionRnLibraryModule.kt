@@ -16,6 +16,7 @@ class SpecificVersionRnLibraryModule(reactContext: ReactApplicationContext) :
   override fun multiply(a: Double, b: Double): Double {
     return a * b
   }
+
   override fun addition(a: Double, b: Double): Double {
     return a + b
   }

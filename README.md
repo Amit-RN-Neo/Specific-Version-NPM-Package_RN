@@ -1,6 +1,6 @@
 # specific-version-rn-library
 
-specific version rn library
+specific version of rn library
 
 ## Installation
 
@@ -10,6 +10,7 @@ npm install specific-version-rn-library
 
 ## Usage
 
+
 ```js
 import { multiply } from 'specific-version-rn-library';
 
@@ -17,6 +18,7 @@ import { multiply } from 'specific-version-rn-library';
 
 const result = multiply(3, 7);
 ```
+
 
 ## Contributing
 

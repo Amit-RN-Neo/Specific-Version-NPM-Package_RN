@@ -2,10 +2,8 @@ import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
-  addition(a: number, b: number): number;
   multiply(a: number, b: number): number;
+  addition(a: number, b: number): number;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>(
-  'SpecificVersionRnLibrary'
-);
+export default TurboModuleRegistry.getEnforcing<Spec>('SpecificVersionRnLibrary');

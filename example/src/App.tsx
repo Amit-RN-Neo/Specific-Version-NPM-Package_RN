@@ -1,14 +1,14 @@
 import { Text, View, StyleSheet } from 'react-native';
 import { addition, multiply } from 'specific-version-rn-library';
 
-const result = multiply(3, 9);
-const resultAdd = addition(5, 18);
+const result = multiply(5, 7);
+const additionResult = addition(5, 7);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result Of Multiplication: {result}</Text>
-      <Text style={styles.testStyle}>Result of Addition: {resultAdd}</Text>
+      <Text style={styles.testStyle}>Mutliply Result: {result}</Text>
+      <Text style={styles.testStyle}>Addition Result: {additionResult}</Text>
     </View>
   );
 }
@@ -18,10 +18,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#fff',
   },
   testStyle: {
     fontSize: 18,
-    color: '#fff',
+    color: '#000000',
     textDecorationLine: 'underline',
     // textDecorationColor: 'red', // Line color
   },
