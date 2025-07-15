@@ -2,7 +2,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import { addition, multiply } from 'specific-version-rn-library';
 
 const result = multiply(5, 7);
-const additionResult = addition(5, 7);
+const additionResult = addition(5, 8);
 
 export default function App() {
   return (
