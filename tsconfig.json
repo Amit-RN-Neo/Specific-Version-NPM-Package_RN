@@ -1,29 +1,18 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "paths": {
-      "specific-version-rn-library": ["./src/index"]
-    },
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "target": "ES2019",
     "module": "ESNext",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noStrictGenericChecks": false,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "outDir": "lib/typescript",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "jsx": "react",
     "strict": true,
-    "target": "ESNext",
-    "verbatimModuleSyntax": true
-  }
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "example"]
 }
